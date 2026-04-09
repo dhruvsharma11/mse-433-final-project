@@ -1,0 +1,44 @@
+# MSE 433 — Olympic Medal Performance Project
+# Requirements for Python virtual environment
+#
+# Create venv:   python3 -m venv mse433-env
+# Activate:      source mse433-env/bin/activate   (Mac/Linux)
+#                mse433-env\Scripts\activate       (Windows)
+# Install:       pip install -r requirements.txt
+#
+# NOTE: Gurobi requires a separate license installation — see note below.
+
+# Core data science
+numpy>=1.24
+pandas>=2.0
+scipy>=1.11
+
+# Statistical modeling
+statsmodels>=0.14.6       # Negative Binomial, Poisson GLM — must be >=0.14.6 for scipy 1.16+ compatibility
+
+# Machine learning utilities
+scikit-learn>=1.2
+
+# Visualization
+matplotlib>=3.7
+seaborn>=0.12
+plotly>=5.9               # Used in Streamlit app
+
+# Notebook environment
+jupyter>=1.0
+notebook>=7.0
+ipykernel>=6.0
+nbconvert>=7.0            # For executing notebooks via CLI
+
+# Streamlit UI
+streamlit>=1.30
+
+# Excel file reading (knowledge base)
+openpyxl>=3.0
+
+# Gurobi Python API
+# Install via: pip install gurobipy
+# You MUST have a valid Gurobi license to solve models.
+# Free academic license: https://www.gurobi.com/academia/academic-program-and-licenses/
+# After getting a license, activate with: grbgetkey <your-license-key>
+gurobipy>=12.0
